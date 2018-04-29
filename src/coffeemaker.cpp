@@ -181,8 +181,8 @@ void Coffeemaker::run (){
 	Screen();
 	
 	do{
-		if (kbhit()){
-			theCommand = getch();
+		if (_kbhit()){
+			theCommand = _getch();
 			switch (theCommand){
 				case 's': {
 					vc = smallCup;

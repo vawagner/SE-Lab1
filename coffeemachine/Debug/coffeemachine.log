@@ -1,45 +1,6 @@
-﻿  coffeemachine.cpp
+﻿  coffeemaker.cpp
 e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
 e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
 e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
 e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-  brewingsystem.cpp
-e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-  coffeemaker.cpp
-e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.cpp(184): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(458): note: Siehe Deklaration von "kbhit"
-e:\praktikum\se-lab1\src\coffeemaker.cpp(185): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\conio.h(452): note: Siehe Deklaration von "getch"
-  grinder.cpp
-e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-  stdafx.cpp
-e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-  StorageVessel.cpp
-e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\storagevessel.cpp(11): warning C4297: "StorageVessel::~StorageVessel": Die Funktion löst eine unerwartete Ausnahme aus
-  e:\praktikum\se-lab1\src\storagevessel.cpp(11): note: Destruktor oder Deallokator weist eine (möglicherweise implizite) nicht auslösende Ausnahmenspezifizierung auf
-  storageSystem.cpp
-e:\praktikum\se-lab1\src\coffeemaker.h(28): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sStrength", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(29): warning C4091: "typedef ": Ignoriert auf der linken Seite von "sCupsize", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\coffeemaker.h(50): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Coffeemaker::ssSystem", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\grinder.h(24): warning C4091: "typedef ": Ignoriert auf der linken Seite von "eGrindingdegree", wenn keine Variable deklariert wurde
-e:\praktikum\se-lab1\src\storagesystem.cpp(11): warning C4297: "storageSystem::~storageSystem": Die Funktion löst eine unerwartete Ausnahme aus
-  e:\praktikum\se-lab1\src\storagesystem.cpp(11): note: Destruktor oder Deallokator weist eine (möglicherweise implizite) nicht auslösende Ausnahmenspezifizierung auf
-  Code wird generiert...
   coffeemachine.vcxproj -> E:\Praktikum\SE-Lab1\Debug\coffeemachine.exe
