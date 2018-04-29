@@ -21,7 +21,7 @@
 #include "stdafx.h"
 
 
-typedef enum eGrindingdegree {rough=0, medium, fine};
+typedef enum eGrindingdegree {rough=0, medium, fine} eGrindingdegree;
 
 class Grinder
 {	

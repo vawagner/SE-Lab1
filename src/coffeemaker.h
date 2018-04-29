@@ -25,8 +25,8 @@ typedef struct {
 	int mlWater;
 	int gCoffeegrounds;
 } Consumptionrate;
-typedef enum sStrength {sDelicate=0, sMedium, sStrong};
-typedef enum sCupsize{smallCup=0, regularCup, largeCup};
+typedef enum sStrength {sDelicate=0, sMedium, sStrong} sStrength;
+typedef enum sCupsize{smallCup=0, regularCup, largeCup} sCupsize;
 
 class Grinder;
 class Brewingsystem;
@@ -47,7 +47,7 @@ class Coffeemaker
 		~Coffeemaker(void);
 	
 	private:
-		typedef enum ssSystem {sReady=0, sBrewing, sDescaling, sError};
+		typedef enum ssSystem {sReady=0, sBrewing, sDescaling, sError} ssSystem;
 		static const char sstext[4][17];
 		ssSystem mStatus;
 		Grinder * mGrinderHandle;
