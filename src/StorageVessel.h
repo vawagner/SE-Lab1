@@ -14,9 +14,8 @@ private:
 
 public:
 	StorageVessel();
-
+	StorageVessel(std::string type);
 	~StorageVessel();
-
 	std::string getCoffeetype();
 };
 

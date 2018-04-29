@@ -2,18 +2,19 @@
 #include "stdafx.h"
 
 StorageVessel::StorageVessel() {
-	// TODO - implement Storage Vessel::Storage Vessel
-	throw "Not yet implemented";
+	this->Coffeetype = "";
+}
+
+StorageVessel::StorageVessel(string type) {
+	this->Coffeetype = type;
 }
 
 StorageVessel::~StorageVessel() {
-	// TODO - implement Storage Vessel::~Storage Vessel
-	throw "Not yet implemented";
+
 }
 
 std::string StorageVessel::getCoffeetype() {
-	// TODO - implement Storage Vessel::getCoffeetype
-	throw "Not yet implemented";
+	return Coffeetype;
 }
 
 

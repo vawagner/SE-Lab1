@@ -16,9 +16,7 @@ public:
 
 	~storageSystem();
 
-	void VesselMaintainance();
-
-	std::string displaySlot();
+	std::string displaySlot(int num);
 };
 
 #endif

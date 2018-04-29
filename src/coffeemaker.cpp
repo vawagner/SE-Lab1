@@ -26,6 +26,7 @@ Coffeemaker::Coffeemaker(void){
 	mBrewingsystemHandle = new Brewingsystem;
 	mStatus = sReady;
 	GOTOXY(10, 4); printf("%s", sstext[sReady]);
+	mStorageHandle = new storageSystem;
 }
 
 Coffeemaker::~Coffeemaker(void){
@@ -151,22 +152,23 @@ bool Coffeemaker::descale (){
 	return (ok);
 }
 
-void Coffeemaker::Screen(void){
-	system("cls");	
+void Coffeemaker::Screen(void) {
+	system("cls");
 	GOTOXY(1, 1); printf("Coffeemachine - (c) AU-Lab");
 	GOTOXY(1, 2); printf("-----------------------------------------------------------------------------");
 	GOTOXY(1, 4); printf("Status : Ready                                                               ");
 	GOTOXY(1, 5); printf("Note   : Please select                                                       ");
-	GOTOXY(1, 6); printf("Setting: Cup Size: REGULAR,  Strength: MEDIUM                                ");
+	GOTOXY(1, 6); printf("Setting: Cup Size: REGULAR,  Strength: MEDIUM, Coffeetype:                   ");
 	//X                   0123456789          0123456789          0123456789
 	//X                             0123456789          0123456789
 	GOTOXY(1, 7); printf("-----------------------------------------------------------------------------");
 	GOTOXY(1, 10); printf("Cup Size     : small     (s), regular (r), large  (l)                       ");
 	GOTOXY(1, 11); printf("Strength     : delicate  (d), medium  (m), strong (g)                       ");
-	GOTOXY(1, 12); printf("Produce coffee           (p)");
-	GOTOXY(1, 13); printf("Cup removed              (c)");
-	GOTOXY(1, 14); printf("Descale                  (a)");
-	GOTOXY(1, 15); printf("Exit programm            (x)\n");
+	GOTOXY(1, 12); printf("Coffeetype   : %s		(1), %s		 (2),									", "ARABICA", "ROBUSTA");
+	GOTOXY(1, 13); printf("Produce coffee           (p)");
+	GOTOXY(1, 14); printf("Cup removed              (c)");
+	GOTOXY(1, 15); printf("Descale                  (a)");
+	GOTOXY(1, 16); printf("Exit programm            (x)\n");
 }
 
 void Coffeemaker::run (){
@@ -212,6 +214,16 @@ void Coffeemaker::run (){
 				case 'g': {
 					vs = sStrong;
 					GOTOXY(40, 6); printf("%s", vstext[sStrong]);
+					break;
+				}
+				case '1': {
+					std::string tmpStr = mStorageHandle->displaySlot(0);
+					GOTOXY(60, 6); printf("%s", tmpStr.c_str());
+					break;
+				}
+				case '2': {
+					std::string tmpStr = mStorageHandle->displaySlot(1);
+					GOTOXY(60, 6); printf("%s", tmpStr.c_str());
 					break;
 				}
 				case 'p': {
