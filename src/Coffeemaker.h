@@ -54,11 +54,11 @@ class Coffeemaker
 		Lines: Strength (delictae, medium, strong)
 		Columns: Cup size (small, regular, large)
 		*/
-		static const Consumptionrate mConsumptionrate [ 3 ] [ 3 ];  // Class variable
+		static const Consumptionrate mConsumptionrate [ 3 ] [ 3 ];
+	storageSystem* mStorageHandle;  // Class variable
 	
 };
 
 
 //..begin "Endif"
-#endif //_Coffeemaker_H_
-//..end "Endif"
+#endif
