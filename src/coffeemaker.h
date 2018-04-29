@@ -18,6 +18,8 @@
 //..end "pragma"
 
 #include "globaldefines.h"
+#include "stdafx.h"
+#include "storageSystem.h"
 
 typedef struct {
 	int mlWater;
@@ -28,6 +30,7 @@ typedef enum sCupsize{smallCup=0, regularCup, largeCup};
 
 class Grinder;
 class Brewingsystem;
+class storageSystem;
 
 class Coffeemaker
 {	
@@ -55,7 +58,7 @@ class Coffeemaker
 		Columns: Cup size (small, regular, large)
 		*/
 		static const Consumptionrate mConsumptionrate [ 3 ] [ 3 ];
-	storageSystem* mStorageHandle;  // Class variable
+		storageSystem * mStorageHandle;  // Class variable
 	
 };
 

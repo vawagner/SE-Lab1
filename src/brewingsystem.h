@@ -18,6 +18,7 @@
 //..end "pragma"
 
 #include "globaldefines.h"
+#include "stdafx.h"
 
 class Brewingsystem
 {	

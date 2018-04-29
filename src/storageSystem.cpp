@@ -1,4 +1,5 @@
 #include "storageSystem.h"
+#include "stdafx.h"
 
 storageSystem::storageSystem() {
 	// TODO - implement storageSystem::storageSystem
@@ -15,7 +16,7 @@ void storageSystem::VesselMaintainance() {
 	throw "Not yet implemented";
 }
 
-string storageSystem::displaySlot() {
+std::string storageSystem::displaySlot() {
 	// TODO - implement storageSystem::displaySlot
 	throw "Not yet implemented";
 }

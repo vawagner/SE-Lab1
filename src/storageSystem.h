@@ -1,6 +1,11 @@
 #ifndef STORAGESYSTEM_H
 #define STORAGESYSTEM_H
 
+#include "stdafx.h"
+#include "StorageVessel.h"
+
+class StorageVessel;
+
 class storageSystem {
 
 private:
@@ -13,7 +18,7 @@ public:
 
 	void VesselMaintainance();
 
-	string displaySlot();
+	std::string displaySlot();
 };
 
 #endif

@@ -22,3 +22,9 @@ extern HANDLE hConsole;
 
 
 // TODO: Reference to additional header required by you programm
+#include <string>
+#include <string.h>
+#include "StorageVessel.h"
+#include "storageSystem.h"
+
+//using namespace std;
