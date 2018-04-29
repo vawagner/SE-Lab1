@@ -153,18 +153,21 @@ bool Coffeemaker::descale (){
 }
 
 void Coffeemaker::Screen(void) {
+	std::string Slot1Name = mStorageHandle->displaySlot(0),
+				Slot2Name = mStorageHandle->displaySlot(1);
+
 	system("cls");
 	GOTOXY(1, 1); printf("Coffeemachine - (c) AU-Lab");
 	GOTOXY(1, 2); printf("-----------------------------------------------------------------------------");
 	GOTOXY(1, 4); printf("Status : Ready                                                               ");
 	GOTOXY(1, 5); printf("Note   : Please select                                                       ");
-	GOTOXY(1, 6); printf("Setting: Cup Size: REGULAR,  Strength: MEDIUM, Coffeetype:                   ");
+	GOTOXY(1, 6); printf("Setting: Cup Size: REGULAR,  Strength: MEDIUM, Coffeetype: %s                ", Slot1Name.c_str());
 	//X                   0123456789          0123456789          0123456789
 	//X                             0123456789          0123456789
 	GOTOXY(1, 7); printf("-----------------------------------------------------------------------------");
 	GOTOXY(1, 10); printf("Cup Size     : small     (s), regular (r), large  (l)                       ");
 	GOTOXY(1, 11); printf("Strength     : delicate  (d), medium  (m), strong (g)                       ");
-	GOTOXY(1, 12); printf("Coffeetype   : %s		(1), %s		 (2),									", "ARABICA", "ROBUSTA");
+	GOTOXY(1, 12); printf("Coffeetype   : %-10s(1), %-8s(2),									", Slot1Name.c_str(), Slot2Name.c_str());
 	GOTOXY(1, 13); printf("Produce coffee           (p)");
 	GOTOXY(1, 14); printf("Cup removed              (c)");
 	GOTOXY(1, 15); printf("Descale                  (a)");

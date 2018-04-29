@@ -39,5 +39,4 @@ class Grinder
 };
 
 //..begin "Endif"
-#endif //_Grinder_H_
-//..end "Endif"
+#endif
