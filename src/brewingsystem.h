@@ -20,6 +20,9 @@
 #include "globaldefines.h"
 #include "stdafx.h"
 
+class Heater;
+class Pump;
+
 class Brewingsystem
 {	
 	
@@ -37,23 +40,13 @@ class Brewingsystem
 	public:
 		Brewingsystem (void );
 		~Brewingsystem (void );
-		bool activateHeater ();
-		bool deactivateHeater ();
-		bool activatePump ();
-		bool deactivatePump ();
-		bool openWatervalve ();
-		bool closeWatervalve ();
-		float pumpWater (float TargetvolumeInMl);
 		float brewCoffee (float TargetvolumeInMl);
-		int measureWatertemperature (); 	/**	Value in �C	*/
-		float measureWatervolume ();
-
-	int heatupWatertank(int TargettemperatureInDegreesCelsius);		/**	Value in �C	*/
+		Heater* getMHeaterHandle();
+		Pump* getMPumpHandle();
 	
 	private:
-		float mWatervolume;	/**	latest count of the water meter, value in ml */
-		float mActualDeltaV;		/**	watervolume as difference between the two latest times of measurement, value in ml	*/
-		int mWatertemperature;	/**	Thermometer, value in �C	*/
+		Heater * mHeaterHandle;
+		Pump * mPumpHandle;
 };
 
 

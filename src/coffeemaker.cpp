@@ -61,7 +61,7 @@ bool Coffeemaker::brewCup (sStrength aType, sCupsize bType){
 	Sleep(1000);
 
 	// Boil up water
-	ActualTemperature = mBrewingsystemHandle->heatupWatertank(SETTEMPERATURE);
+	ActualTemperature = mBrewingsystemHandle->getMHeaterHandle()->heatupWatertank(SETTEMPERATURE);
 	if (abs(ActualTemperature-SETTEMPERATURE)>(EPSREL * SETTEMPERATURE)){
 		goodQuality = false;
 	}
@@ -87,7 +87,7 @@ bool Coffeemaker::brewCup (sStrength aType, sCupsize bType){
 void Coffeemaker::removeCup (){
 	if (mStatus == sBrewing){
 		//Preheat water tank to Tanktemperature
-		mBrewingsystemHandle->heatupWatertank(TANKTEMPERATURE);
+		mBrewingsystemHandle->getMHeaterHandle()->heatupWatertank(TANKTEMPERATURE);
 
 		// Change of state after sReady
 		mStatus = sReady;

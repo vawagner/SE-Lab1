@@ -15,6 +15,8 @@
 #include "coffeemaker.h"
 #include "brewingsystem.h"
 #include "grinder.h"
+#include "Heater.h"
+#include "Pump.h"
 
 // global variable
 extern COORD xyPos;

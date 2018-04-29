@@ -81,6 +81,8 @@
     <ClCompile Include="..\src\brewingsystem.cpp" />
     <ClCompile Include="..\src\coffeemaker.cpp" />
     <ClCompile Include="..\src\grinder.cpp" />
+    <ClCompile Include="..\src\Heater.cpp" />
+    <ClCompile Include="..\src\Pump.cpp" />
     <ClCompile Include="..\src\stdafx.cpp" />
     <ClCompile Include="..\src\StorageVessel.cpp" />
     <ClCompile Include="..\src\storageSystem.cpp" />
@@ -92,6 +94,8 @@
     <ClInclude Include="..\src\eGrindingdegree.h" />
     <ClInclude Include="..\src\globaldefines.h" />
     <ClInclude Include="..\src\grinder.h" />
+    <ClInclude Include="..\src\Heater.h" />
+    <ClInclude Include="..\src\Pump.h" />
     <ClInclude Include="..\src\sCupsize.h" />
     <ClInclude Include="..\src\sStrength.h" />
     <ClInclude Include="..\src\stdafx.h" />
