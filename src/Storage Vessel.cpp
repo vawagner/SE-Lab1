@@ -19,3 +19,8 @@ string Storage_Vessel::getCoffeetype() {
 	// TODO - implement Storage Vessel::getCoffeetype
 	throw "Not yet implemented";
 }
+
+string Storage_Vessel::getCoffeetype() {
+	// TODO - implement Storage Vessel::getCoffeetype
+	throw "Not yet implemented";
+}
