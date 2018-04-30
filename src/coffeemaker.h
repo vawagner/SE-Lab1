@@ -37,7 +37,7 @@ class Coffeemaker
 	public:
 		void Screen ();
 		void run ();
-		bool brewCup (sStrength aType, sCupsize bType);
+		bool brewCup (sStrength aType, sCupsize bType, std::string type);
 		bool descale ();
 		void removeCup ();
 		void Ready ();

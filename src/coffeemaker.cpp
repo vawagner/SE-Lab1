@@ -32,7 +32,7 @@ Coffeemaker::Coffeemaker(void){
 Coffeemaker::~Coffeemaker(void){
 }
 
-bool Coffeemaker::brewCup (sStrength aType, sCupsize bType){
+bool Coffeemaker::brewCup (sStrength aType, sCupsize bType, std::string type){
 	float ActualVolume;
 	int ActualCoffeegrounds;
 	int ActualTemperature;
@@ -47,7 +47,7 @@ bool Coffeemaker::brewCup (sStrength aType, sCupsize bType){
 	GOTOXY(10, 4); printf("%s", sstext[sBrewing]);
 
 	Consumptionrate Options = mConsumptionrate [(int)aType][(int)bType];
-	GOTOXY(10, 5); printf("Vol %dml, Strength %dg                                               ", Options.mlWater, Options.gCoffeegrounds);
+	GOTOXY(10, 5); printf("Vol %dml, Strength %dg , Type %s                ", Options.mlWater, Options.gCoffeegrounds,type.c_str());
 
 	// Grind coffee beans according to selected cup size and coffee strength
 	ActualCoffeegrounds = mGrinderHandle->grindCoffeebeans(Options.gCoffeegrounds);
@@ -182,6 +182,7 @@ void Coffeemaker::run (){
 	char vctext[][8]={"SMALL  ",   "REGULAR", "LARGE  "};
 	char vstext[][9]={"DELICATE", "MEDIUM  ",  "STRONG  "};
 	
+	std::string Slot = mStorageHandle->displaySlot(0);
 
 	Screen();
 	
@@ -221,16 +222,18 @@ void Coffeemaker::run (){
 				}
 				case '1': {
 					std::string tmpStr = mStorageHandle->displaySlot(0);
+					Slot = tmpStr;
 					GOTOXY(60, 6); printf("%s", tmpStr.c_str());
 					break;
 				}
 				case '2': {
 					std::string tmpStr = mStorageHandle->displaySlot(1);
+					Slot = tmpStr;
 					GOTOXY(60, 6); printf("%s", tmpStr.c_str());
 					break;
 				}
 				case 'p': {
-					drinkable = brewCup(vs, vc);
+					drinkable = brewCup(vs, vc, Slot);
 					break;
 				}
 				case 'c': {
